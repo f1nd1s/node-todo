@@ -62,3 +62,4 @@ require('./app/routes.js')(app);
 app.listen(port);
 console.log("App listening on port " + port);
 
+console.log("MONGO_URI:", process.env.MONGO_URI);
