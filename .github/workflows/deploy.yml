@@ -1,0 +1,30 @@
+# .github/workflows/deploy.yml
+name: Node.js CI/CD Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests (placeholder)
+        run: echo "No tests yet"
+
+      - name: Deploy step (placeholder)
+        run: echo "Deploy step will go here"
