@@ -1,4 +1,3 @@
-# .github/workflows/deploy.yml
 name: Node.js CI/CD Pipeline
 
 on:
@@ -23,8 +22,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests (placeholder)
-        run: echo "No tests yet"
+      - name: Run tests
+        run: npm test
 
       - name: Deploy step (placeholder)
         run: echo "Deploy step will go here"
